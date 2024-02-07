@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="x-icon" href="../images/Scoot_logo.svg.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/location.css">
+  <title>Scoot-location</title>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="container">
+        <div class="nav container_">
+          <ul class="nav-list">
+            <li class="hamburger_menu"><img onclick=ShowSideBar() src="../images/hamburger_menu.svg" alt=""></li>
+            <li class="nav-list-item"><a href="index.html"><img class="logo" src="../images/logo.svg" alt="logotip"></a>
+            </li>
+            <li class="nav-list-item"><a href="about.html">About</a></li>
+            <li class="nav-list-item"><a href="location.html">Location</a></li>
+            <li class="nav-list-item"><a href="careers.html">Careers</a></li>
+          </ul>
+          <a class="btn" href="#">Get Scootin</a>
+        </div>
+
+        <div class="sitebar container_ sitebar">
+          <ul class="sitebar-list">
+            <li class="x"><img onclick=HideBar() src="../images/x.svg" alt=""></li>
+            <li class="sitebar-list-item "><a href="index.html"><img src="../images/logo.svg" alt="logotip"></a></li>
+            <li class="sitebar-list-item"><a href="about.html">About</a></li>
+            <li class="sitebar-list-item"><a href="location.html">Location</a></li>
+            <li class="sitebar-list-item"><a href="careers.html">Careers</a></li>
+
+          </ul>
+          <a class="btn" href="#">Get Scootin</a>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="hero container_">
+      <h1>Locations</h1>
+    </div>
+  </header>
+
+
+
+
+  <main>
+    <div class="container">
+      <picture>
+        <source media="(max-width: 400px)" srcset="../images/location-mobile.png">
+      <img src="../images/location.png" alt="">
+      </picture>
+      <ul class="location-list">
+        <li class="location-list-item">New York</li>
+        <li class="location-list-item">London</li>
+        <li class="location-list-item">Jakarta</li>
+        <li class="location-list-item">Yokohama</li>
+      </ul>
+
+
+      <div class="location-box">
+        <div class="location-box-in">
+        <h2>Your city not listed?</h2>
+        <p>
+          If you’d like to see Scoot in your hometown, be sure to let us know. We track requests and plan launches based
+          on demand. Feel free to message us by clicking the link or messaging us on social.
+        </p>
+      </div>
+        <a class="btn" href="#">Message Us</a>
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <div class="container_">
+      <div class="footer">
+        <div class="footer_in container">
+          <h2>Sign up and <br> Scoot off today</h2>
+          <ul class="Apps">
+            <li class="Apps-item">
+              <a href="https://apps.apple.com/us/app/scoot-mobile/id898287610">
+                <img src="../images/AppStore.png" alt="apps">
+              </a>
+            </li>
+            <li class="Apps-item">
+              <a href="https://play.google.com/store/apps/details?id=com.flyscoot.android&hl=ru&gl=US">
+                <img src="../images/PlayMarket.png" alt="apps">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="main-footer">
+        <div class="main-footer-in container">
+          <ul class="main-footer-in-list">
+            <li class="main-footer-in-list-item">
+              <a href="index.html">
+                <img src="../images/footer-logo.svg" alt="logotip">
+              </a>
+            </li>
+            <li class="main-footer-in-list-item"><a href="about.html">About</a></li>
+            <li class="main-footer-in-list-item"><a href="location.html">Location</a></li>
+            <li class="main-footer-in-list-item"><a href="careers.html">Careers</a></li>
+          </ul>
+
+          <ul class="footer-list-icons">
+            <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          </ul>
+        </div>
+
+
+
+
+
+
+
+
+        <script>
+          function ShowSideBar() {
+            const sitebar = document.querySelector(".sitebar")
+            sitebar.style.display = 'block'
+          }
+
+          function HideBar() {
+            const hidesitebar = document.querySelector(".sitebar")
+            hidesitebar.style.display = 'none'
+          }
+ </script>
+
+
+
+
+
+</body>
+
+</html>

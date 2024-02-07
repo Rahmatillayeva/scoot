@@ -1,0 +1,26 @@
+.hero {
+  background-image: url(../../images/about-hero-fon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+  h1 {
+    padding: 150px 122px;
+    font-family: var(--text-heady-font-family);
+    font-weight: var(--text-heady-font-weight);
+    font-size: 56px;
+    color: var(--text-fon-colors);
+  }
+
+}
+
+
+
+@media only screen and (max-width: 500px) {
+  .hero {
+    h1 {
+      padding: 150px 50px;
+      font-size: 50px;
+    }
+  }
+}

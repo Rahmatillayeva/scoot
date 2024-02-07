@@ -1,0 +1,27 @@
+.careers {
+  margin: 50px 0;
+  &-list {
+    background-color: #F2F5F9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    &-item {
+      h4 {
+        font-family: var(--text-heady-font-family);
+        font-weight: var(--text-heady-font-weight);
+        font-size: 24px;
+        color: var(--text-heady-colors);
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-family: var(--text-p-font-family);
+        font-weight: var(--text-p-font-weight);
+        font-size: 15px;
+        color: var(--text-p-colors);
+      }
+    }
+  }
+}

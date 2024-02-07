@@ -1,0 +1,298 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-p-font-family: Lexend Deca;
+  --text-p-font-weight: 400;
+  --text-p-colors: #939CAA;
+  --text-heady-font-family: Space Mono;
+  --text-heady-font-weight: 700;
+  --text-heady-colors: #495567;
+  --text-fon-colors: #FFFFFF;
+}
+
+.btn {
+  padding: 10px 35px;
+  font-weight: var(--text-heady-font-weight);
+  font-family: var(--text-heady-font-family);
+  color: var(--text-fon-colors);
+  background-color: #FCB72B;
+  border: 3px solid #FCB72B;
+}
+
+.btn:hover {
+  color: #FCB72B;
+  background-color: transparent;
+}
+
+.container {
+  max-width: 1106px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container_ {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+  background-color: #FFF;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+.nav-list-item + .nav-list-item {
+  margin-left: 50px;
+}
+.nav-list-item + .nav-list-item a {
+  font-family: var(--text-p-font-family);
+  font-weight: var(--text-p-font-weight);
+  color: var(--text-p-colors);
+}
+.nav-list-item + .nav-list-item a:hover {
+  color: #FCB72B;
+}
+
+.hamburger_menu {
+  display: none;
+}
+
+.sitebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 200vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #FFF;
+  flex-direction: column;
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  padding: 20px;
+}
+.sitebar .sitebar-list .sitebar-list-item + .sitebar-list-item a {
+  font-family: var(--text-p-font-family);
+  font-weight: var(--text-p-font-weight);
+  color: var(--text-p-colors);
+}
+.sitebar .sitebar-list .sitebar-list-item + .sitebar-list-item a:hover {
+  color: #FCB72B;
+}
+.sitebar .sitebar-list .sitebar-list-item {
+  padding: 25px;
+}
+
+@media only screen and (max-width: 900px) {
+  .nav-list ~ a {
+    display: none;
+  }
+  .nav-list-item + .nav-list-item {
+    display: none;
+  }
+  .nav .logo {
+    margin-left: 50px;
+  }
+  .hamburger_menu {
+    display: block;
+  }
+}
+.hero {
+  background-image: url(../../images/about-hero-fon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero h1 {
+  padding: 150px 122px;
+  font-family: var(--text-heady-font-family);
+  font-weight: var(--text-heady-font-weight);
+  font-size: 56px;
+  color: var(--text-fon-colors);
+}
+
+@media only screen and (max-width: 500px) {
+  .hero h1 {
+    padding: 150px 50px;
+    font-size: 50px;
+  }
+}
+img {
+  max-width: 100%;
+}
+
+.location-list {
+  margin: 80px 0;
+}
+.location-list-item {
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #FFF4DF;
+  text-align: center;
+  font-family: var(--text-heady-font-family);
+  font-weight: var(--text-heady-font-weight);
+  font-size: 24px;
+  color: var(--text-heady-colors);
+  margin: 10px 0;
+  display: none;
+}
+
+.location-box {
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.location-box-in {
+  width: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.location-box-in h2 {
+  font-family: var(--text-heady-font-family);
+  font-weight: var(--text-heady-font-weight);
+  font-size: 30px;
+  color: var(--text-heady-colors);
+  width: 300px;
+}
+.location-box-in p {
+  font-family: var(--text-p-font-family);
+  font-weight: var(--text-p-font-weight);
+  font-size: 15px;
+  color: var(--text-p-colors);
+  width: 400px;
+}
+
+@media only screen and (max-width: 900px) {
+  .location-box {
+    flex-direction: column;
+    text-align: center;
+  }
+  .location-box-in {
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+  }
+  .location-box-in p {
+    margin: 50px 0;
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .location-list-item {
+    display: block;
+  }
+}
+.footer {
+  background-image: url(../images/footer-fon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+}
+.footer .footer_in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer_in h2 {
+  font-family: var(--text-heady-font-family);
+  font-weight: var(--text-heady-font-weight);
+  font-size: 48px;
+  color: var(--text-fon-colors);
+  width: 500px;
+  padding: 50px 0;
+}
+.footer .footer_in .Apps {
+  display: flex;
+}
+.footer .footer_in .Apps-item {
+  margin-left: 10px;
+}
+
+.main-footer {
+  background-color: #333A44;
+}
+.main-footer-in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.main-footer-in-list {
+  display: flex;
+  align-items: center;
+}
+.main-footer-in-list-item + .main-footer-in-list-item {
+  margin-left: 50px;
+}
+.main-footer-in-list-item + .main-footer-in-list-item a {
+  font-family: var(--text-p-font-family);
+  font-weight: var(--text-p-font-weight);
+  color: var(--text-p-colors);
+}
+.main-footer-in-list-item + .main-footer-in-list-item a:hover {
+  color: #FCB72B;
+}
+.main-footer-in .footer-list-icons {
+  display: flex;
+}
+.main-footer-in .footer-list-icons .fa-brands {
+  color: #FCB72B;
+  margin-left: 20px;
+}
+.main-footer-in .footer-list-icons .fa-brands:hover {
+  color: #E5ECF4;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer_in {
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  .footer_in h2 {
+    max-width: 350px;
+    padding: 0 60px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .main-footer-in {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .main-footer-in-list {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .main-footer-in-list-item + .main-footer-in-list-item {
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .Apps {
+    flex-direction: column;
+  }
+  .Apps-item {
+    padding: 20px 0;
+  }
+}/*# sourceMappingURL=location.css.map */
